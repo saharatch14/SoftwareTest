@@ -22,10 +22,11 @@ Payload (JSON):
 
 Installation Transaction Broadcasting and Monitoring Client
 
-##Python
+## Python
 ===
 
-    You must first install library:
+You must first install library:
+
     ```Bash
     pip install requests
     ```
