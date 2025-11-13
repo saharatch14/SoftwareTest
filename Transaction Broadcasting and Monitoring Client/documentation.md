@@ -3,13 +3,12 @@
 Installation Transaction Broadcasting and Monitoring Client
 
 ## Python
-===
 
 You must first install library:
 
-    ```Bash
-    pip install requests
-    ```
+```Bash
+pip install requests
+```
 
 1. Create Instance from class TransactionClient in your application
 
@@ -44,10 +43,8 @@ You must first install library:
     |`PENDING`| Transaction is awaiting processing |
     |`DNE`| Transaction does not exist |
 
-===
 
 ## JavaScript
-===
 
 1. Setup:
 
@@ -89,5 +86,3 @@ You must first install library:
 8. Customization:
    * Modify URLs in the constructor for different environments.
    * Extend methods for additional features (e.g., batch broadcasts).
-
-===
