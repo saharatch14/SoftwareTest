@@ -21,7 +21,7 @@ pip install requests
     Output: Returns the tx_hash (str) if successful; otherwise, it returns None.
 
     ```Python
-    tx_hash = client.broadcast_transaction("BTC", 65000, 1700000000)
+    tx_hash = client.broadcast_transaction("BTC", 4500, 1678912345)
     ```
 
 3. Call the monitor_status method using the received tx_hash.
@@ -47,7 +47,6 @@ pip install requests
 ## JavaScript
 
 1. Setup:
-
    * Ensure you have a JavaScript runtime (e.g., Node.js for server-side, or a browser for client-side).
    * Install dependencies if needed: For Node.js, use `npm install node-fetch`
     
@@ -55,25 +54,21 @@ pip install requests
    * Create an instance of TransactionClient. It uses hardcoded URLs but can be customized if the API changes.
 
 3. Broadcasting a Transaction:
-
    * Call broadcastTransaction(symbol, price, timestamp) with your data.
    * Returns a promise resolving to the tx_hash (string).
    * Example payload: { symbol: "ETH", price: 4500, timestamp: 1678912345 }.
   
 4. Checking Status:
-
    * Call checkTransactionStatus(txHash) with the hash.
    * Returns a promise resolving to the status string.
 
 5. Monitoring:
-
    * Call monitorTransaction(txHash, checkInterval, maxAttempts) to poll until resolution.
    * checkInterval: Seconds between checks (default: 5).
    * maxAttempts: Max polls before giving up (default: 20).
    * Returns a promise resolving to the final status.
 
 6. Error Handling:
-   
    * Wrap calls in try/catch for network errors or API failures.
    * The client throws errors on bad HTTP responses.
 
