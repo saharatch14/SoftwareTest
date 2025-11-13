@@ -1,24 +1,4 @@
 # Transaction Broadcasting and Monitoring Client
-Broadcast Transaction
-
-request to
-`https://mock-node-wgqbnxruha-as.a.run.app/broadcast`.
-
-Endpoint: /broadcast
-
-Method: POST
-
-Input Parameters: symbol (string), price (uint64), timestamp (uint64)
-
-Payload (JSON):
-
-|Json structure
-|{|
-|  "symbol": string,|
-|  "price": uint64,|
-|  "timestamp": uint64|
-|}|
-|----------------------------------------------|
 
 Installation Transaction Broadcasting and Monitoring Client
 
@@ -55,3 +35,11 @@ You must first install library:
         final_status = client.monitor_status(tx_hash)
         print(f"Status: {final_status}")
     ```
+
+Transaction Status Monitoring:
+| tx_status | monitor_status |
+| ---- | ---- |
+|`CONFIRMED`| Transaction has been processed and confirmed |
+|`FAILED`| Transaction failed to process |
+|`PENDING`| Transaction is awaiting processing |
+|`DNE`| Transaction does not exist |
