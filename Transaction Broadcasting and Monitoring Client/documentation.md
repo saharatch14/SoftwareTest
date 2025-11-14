@@ -64,8 +64,8 @@ pip install requests
 
 5. Monitoring:
    * Call monitorTransaction(txHash, checkInterval, maxAttempts) to poll until resolution.
-   * checkInterval: Seconds between checks (default: 5).
-   * maxAttempts: Max polls before giving up (default: 20).
+   * checkInterval: Seconds between checks (In case Set default: 5).
+   * maxAttempts: Max polls before giving up (In case Set default: 20).
    * Returns a promise resolving to the final status.
 
 6. Error Handling:
